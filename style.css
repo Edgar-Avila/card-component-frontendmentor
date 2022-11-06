@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --bg-blue: hsl(217, 54%, 11%);
+    --card-blue: hsl(216, 50%, 16%);
+    --line-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    padding: 1em;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-blue);
+}
+
+.card{
+    margin: auto;
+    border-radius: 10px;
+    background-color: var(--card-blue);
+    max-width: 300px;
+    padding: 1.5em;
+}
+
+.card .equilibrium {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.card h3 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.card p {
+    color: var(--soft-blue);
+}
+
+.card .info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+.card .info div {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.card .amount {
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+.card .days {
+    color: var(--soft-blue);
+}
+
+.card .author {
+    padding-top: 1em;
+    border-top: 1px solid var(--line-blue);
+    color: var(--soft-blue);
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.card .author img {
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    width: 40px;
+}
+
+.card .author a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.card .author a:hover {
+    text-decoration: underline;
+}
+
+.card .author img:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+.card .amount:hover,
+.card .days:hover {
+    cursor: pointer;
+}
+
+.card .amount:hover img {
+    transform: rotateY(360deg);
+    transition: 1s ease-in;
+}
+
+.card .days:hover img {
+    transform: rotate(360deg);
+    transition: 1s ease-in;
+}
